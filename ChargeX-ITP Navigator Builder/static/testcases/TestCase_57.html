@@ -1,0 +1,29 @@
+<html><head><style>
+        body { font-family: Arial; font-size: 16px; padding: 20px; position: relative; }
+        table { border: 1px solid #000; border-collapse: collapse; width: 100%; table-layout: auto;}
+        td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; word-wrap: break-word; max-width: 200px;}
+        td.label { font-weight: bold; background: #f2f2f2; }
+        .header-img { position: absolute; top: 20px; right: 20px; }
+        .footer { margin-top: 20px; font-size: 14px; }
+        </style></head><body>
+        <img src="/static/images/chargex.png" alt="ChargeX Logo", 
+        style="float: right; width: 25%; margin: 5px;">
+        <table>
+        <br>
+        <br>
+        <tr><td class='label' style='background-color: #779394; color: white;'>Test Name</td><td class='label' colspan='4' style='background-color: #779394; color: white;'>Unsuccessful seamless retry due to retry attempts duration exceeding the specified TT_SR_session timer duration
+[Multiple enumerations]</td></tr><tr><td class='label'>Test Identifier</td><td colspan='4'>ITP-02-06-005</td></tr><tr><td class='label'>Test Type</td><td colspan='4'>Seamless Retry </td></tr><tr><td class='label'>Test Category</td><td colspan='4'>Advanced Charging Tests</td></tr><tr><td class='label'>Test Purpose</td><td colspan='4'>To ensure the seamless retry will not function after a defined  TT_SR_session timer duration.</td></tr><tr><td class='label'>Observed Metrics</td><td colspan='4'>HLC messages,
+Pilot states,
+# retries,
+Session duration</td></tr><tr><td class='label'>Intended MRECs/Errors</td><td colspan='4'>"AuthorizationTimeout"</td></tr><tr><td class='label'>Other Possible MRECs</td><td colspan='4'>--</td></tr><tr><td class='label' rowspan='6'>Test Conditions</td><td class='label'>Authentication Type/s</td><td colspan='3'>EIM</td></tr><tr><td class='label'>Plug or Authenticate first</td><td colspan='3'>Authenticate</td></tr><tr><td class='label'>Fault Method/s</td><td colspan='3'>AuthorizationTimeout [Sr.No.31]</td></tr><tr><td class='label'>HLC Protocol/s</td><td colspan='3'>DIN SPEC 70121, ISO 15118-2, ISO 15118-20, J3400-1</td></tr><tr><td class='label'>Involved System/s</td><td colspan='3'>EV, EVSE</td></tr><tr><td class='label'>Test Reference</td><td colspan='3'><a href="http://Link to the published document for seamless retry" target="_blank">Link to the published document for seamless retry</a></td></tr><tr><td class='label'>Steps</td><td colspan='4'>1. Set EVSE authentication option to "Authentication Type".<br/>2. Set TT_SR_session timer to "TT_SR_session Timer Duration".<br/>3. Plug-in EV.<br/>4. Within 30 seconds, provide "Authentication Type".<br/>5. Inject 'Fault Method'.<br/>6. Observe EVSE for Pilot/HLC state transition after fault and retry attempt.<br/>7. Do not remove the 'Fault Method' within TT_SR_session timer duration.<br/>8. If the charge session starts, terminate it 30-60 seconds into the power transfer.<br/>9. Unplug EV.</td></tr><tr><td class='label'>Pass Criteria (Check box if met)</td><td colspan='4'><table style="width:100%;border:none;"><tr style="border:none;"><td style="border:none;">• Session terminates as seamless retry time exceeds  TT_SR_session Timer Duration.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr></table></td></tr><tr><td class='label'>Comments</td><td colspan='4'><br/><br/><br/><br/><br/></td></tr></table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+    </body></html>

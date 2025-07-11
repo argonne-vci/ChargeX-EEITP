@@ -1,0 +1,31 @@
+<html><head><style>
+        body { font-family: Arial; font-size: 16px; padding: 20px; position: relative; }
+        table { border: 1px solid #000; border-collapse: collapse; width: 100%; table-layout: auto;}
+        td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; word-wrap: break-word; max-width: 200px;}
+        td.label { font-weight: bold; background: #f2f2f2; }
+        .header-img { position: absolute; top: 20px; right: 20px; }
+        .footer { margin-top: 20px; font-size: 14px; }
+        </style></head><body>
+        <img src="/static/images/chargex.png" alt="ChargeX Logo", 
+        style="float: right; width: 25%; margin: 5px;">
+        <table>
+        <br>
+        <br>
+        <tr><td class='label' style='background-color: #779394; color: white;'>Test Name</td><td class='label' colspan='4' style='background-color: #779394; color: white;'>V2G Dynamic BPT using ISO 15118-20, Command -5Amps</td></tr><tr><td class='label'>Test Identifier</td><td colspan='4'>ITP-02-13-001</td></tr><tr><td class='label'>Test Type</td><td colspan='4'>Dynamic Bi-directional Power Transfer (DBPT)</td></tr><tr><td class='label'>Test Category</td><td colspan='4'>Advanced Charging Tests</td></tr><tr><td class='label'>Test Purpose</td><td colspan='4'> - To test ISO 15118-20 V2G Dynamic Bidirectional Power Transfer charging feature
+ - To test charge scheduling capabilities within Dynamic BPT</td></tr><tr><td class='label'>Observed Metrics</td><td colspan='4'>Session initialization stages, 
+EV UI response, 
+EVSE UI response,
+HLC Messaging</td></tr><tr><td class='label'>Intended MRECs/Errors</td><td colspan='4'>--</td></tr><tr><td class='label'>Other Possible MRECs</td><td colspan='4'>MessageSequenceFailure, Other failure</td></tr><tr><td class='label' rowspan='8'>Test Conditions</td><td class='label'>HLC Protocol/s</td><td colspan='3'>ISO 15118-20</td></tr><tr><td class='label'>Involved System/s</td><td colspan='3'>EV, EVSE</td></tr><tr><td class='label'>EV Initial SoC</td><td colspan='3'><50%</td></tr><tr><td class='label'>EV ServiceID/s</td><td colspan='3'>ServiceDiscoveryRequest:<br/>ServiceID:17</td></tr><tr><td class='label'>EV Charge Parameters</td><td colspan='3'>ChargeParameterDiscoveryReq:<br/>EVMinimumEnergyRequest: -5000W<br/>EVMaximumDischargePower: -10000W<br/>EVMaximumDischargeCurrent: -10A<br/>MinimumSOC: 5%</td></tr><tr><td class='label'>EVSE Charge Parameters</td><td colspan='3'>ChargeParameterDiscoveryRes:<br/>EVSEMaximumDischargePower: -10000W<br/>EVSEMaximumDischargeCurrent: -10A</td></tr><tr><td class='label'>EV Bidirectional Control</td><td colspan='3'>DC_BidirectionalControlReq:<br/>EVTargetCurrent: 'value'<br/>EVMaximumDischargeCurrent: -10A<br/>EVMaximumDischargePower: -10000W</td></tr><tr><td class='label'>EVSE Bidirectional Control</td><td colspan='3'>DC_BidirectionalControlRes:<br/>EVSEPresentCurrent: -5A</td></tr><tr><td class='label'>Steps</td><td colspan='4'>1. Set EVSE HLC highest priority to 'HLC Protocol'.<br/>2. Set EVSE authentication option to 'Authentication Type'.<br/>3. Set EV available service IDs to 'EV ServiceIDs'.<br/>4. Set EV charge parameters to include 'EV Charge Parameters' values.<br/>5. Set EVSE charge parameters to include 'EVSE Charge Parameters' values.<br/>6. Plug-in vehicle Within 30 seconds.<br/>7. Provide 'Authentication Type'.<br/>8. Observe the session initialization into power transfer.<br/>9. Ensure EV continuously sends (over HLC) 'EV Bidirectional Control'.<br/>10. Ensure EVSE continuously responds (over HLC) with 'EVSE Bidirectional Control'.<br/>11. If no fault occurs, after 60 seconds terminate charge session. Unplug EV.</td></tr><tr><td class='label'>Pass Criteria (Check box if met)</td><td colspan='4'><table style="width:100%;border:none;"><tr style="border:none;"><td style="border:none;">• The EV and EVSE execute a reverse Power Transfer, i.e.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr><tr style="border:none;"><td style="border:none;">• EV battery supplying the grid.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr></table></td></tr><tr><td class='label'>Comments</td><td colspan='4'><br/><br/><br/><br/><br/></td></tr></table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+    </body></html>

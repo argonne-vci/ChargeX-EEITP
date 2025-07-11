@@ -1,0 +1,36 @@
+/* static/style.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px; /* compact font size */
+}
+
+table td {
+  padding: 2px;
+  vertical-align: top;
+}
+
+table td:first-child {
+  font-weight: bold;
+  width: 25%;
+}
+
+/* Optional: remove border spacing */
+table, td {
+  border: 1px solid #ddd;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text h2,
+.header-text h3 {
+  margin: 0;
+}
+
+.header-logo img {
+  height: 40px;  /* Adjust size as needed */
+}

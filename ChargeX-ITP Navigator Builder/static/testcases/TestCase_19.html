@@ -1,0 +1,25 @@
+<html><head><style>
+        body { font-family: Arial; font-size: 16px; padding: 20px; position: relative; }
+        table { border: 1px solid #000; border-collapse: collapse; width: 100%; table-layout: auto;}
+        td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; word-wrap: break-word; max-width: 200px;}
+        td.label { font-weight: bold; background: #f2f2f2; }
+        .header-img { position: absolute; top: 20px; right: 20px; }
+        .footer { margin-top: 20px; font-size: 14px; }
+        </style></head><body>
+        <img src="/static/images/chargex.png" alt="ChargeX Logo", 
+        style="float: right; width: 25%; margin: 5px;">
+        <table>
+        <br>
+        <br>
+        <tr><td class='label' style='background-color: #779394; color: white;'>Test Name</td><td class='label' colspan='4' style='background-color: #779394; color: white;'>Emulating a loss of internet</td></tr><tr><td class='label'>Test Identifier</td><td colspan='4'>ITP-01-02-003</td></tr><tr><td class='label'>Test Type</td><td colspan='4'>Idle Error Faults (EVSE Only)</td></tr><tr><td class='label'>Test Category</td><td colspan='4'>Baseline Functionality & Safety Tests</td></tr><tr><td class='label'>Test Purpose</td><td colspan='4'>To ensure "NoInternet" fault is produced in the event of a lost internet connection.</td></tr><tr><td class='label'>Observed Metrics</td><td colspan='4'>Error Messages</td></tr><tr><td class='label'>Intended MRECs/Errors</td><td colspan='4'>"NoInternet"</td></tr><tr><td class='label'>Other Possible MRECs</td><td colspan='4'> -- </td></tr><tr><td class='label' rowspan='2'>Test Conditions</td><td class='label'>HLC Protocol/s</td><td colspan='3'>DIN SPEC 70121, ISO 15118-2, ISO 15118-20, J3400-1</td></tr><tr><td class='label'>Involved System/s</td><td colspan='3'>EVSE</td></tr><tr><td class='label'>Steps</td><td colspan='4'>1. Power Off EVSE; perform Zero-Voltage-Verification and Lock-Out-Tag-Out.<br/>2. Disconnect WiFi router.<br/>3. Disconnect Ethernet connection from EVSE dispenser MCU.<br/>4. Remove LTE chip/connection point from EVSE dispenser MCU.<br/>5. Remove Lock-Out-Tag-Out, Power ON.<br/>6. Observe EVSE UI and/or backend for reported fault.</td></tr><tr><td class='label'>Pass Criteria (Check box if met)</td><td colspan='4'><table style="width:100%;border:none;"><tr style="border:none;"><td style="border:none;">• MREC is produced and station does not allow for any charge sessions until remediated.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr></table></td></tr><tr><td class='label'>Comments</td><td colspan='4'><br/><br/><br/><br/><br/></td></tr></table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+    </body></html>

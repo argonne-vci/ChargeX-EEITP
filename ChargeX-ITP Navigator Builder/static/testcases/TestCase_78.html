@@ -1,0 +1,31 @@
+<html><head><style>
+        body { font-family: Arial; font-size: 16px; padding: 20px; position: relative; }
+        table { border: 1px solid #000; border-collapse: collapse; width: 100%; table-layout: auto;}
+        td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; word-wrap: break-word; max-width: 200px;}
+        td.label { font-weight: bold; background: #f2f2f2; }
+        .header-img { position: absolute; top: 20px; right: 20px; }
+        .footer { margin-top: 20px; font-size: 14px; }
+        </style></head><body>
+        <img src="/static/images/chargex.png" alt="ChargeX Logo", 
+        style="float: right; width: 25%; margin: 5px;">
+        <table>
+        <br>
+        <br>
+        <tr><td class='label' style='background-color: #779394; color: white;'>Test Name</td><td class='label' colspan='4' style='background-color: #779394; color: white;'>Small EAmount value input from EV user for CDP</td></tr><tr><td class='label'>Test Identifier</td><td colspan='4'>ITP-02-10-002</td></tr><tr><td class='label'>Test Type</td><td colspan='4'>Charge Discovery Protocol (CDP)</td></tr><tr><td class='label'>Test Category</td><td colspan='4'>Advanced Charging Tests</td></tr><tr><td class='label'>Test Purpose</td><td colspan='4'>To check the effect of a very small EAmount value provided by the EV user during the charge discovery protocol.</td></tr><tr><td class='label'>Observed Metrics</td><td colspan='4'>Current [A(DC)],
+EVSE Available Current [A(DC)],
+EV Current Req [A(DC)]</td></tr><tr><td class='label'>Intended MRECs/Errors</td><td colspan='4'>--</td></tr><tr><td class='label'>Other Possible MRECs</td><td colspan='4'>--</td></tr><tr><td class='label' rowspan='5'>Test Conditions</td><td class='label'>EV Initial SoC</td><td colspan='3'><15%</td></tr><tr><td class='label'>EV SoC Charge Limit</td><td colspan='3'>100%</td></tr><tr><td class='label'>HLC Protocol/s</td><td colspan='3'>ISO 15118-2, ISO 15118-20</td></tr><tr><td class='label'>Involved System/s</td><td colspan='3'>EV, EVSE</td></tr><tr><td class='label'>EV HMI charge scheduling values</td><td colspan='3'>EAmount: 1 kWh, DepartureTime: 36000 (10 hr)</td></tr><tr><td class='label'>Steps</td><td colspan='4'>1. Set EVSE HLC highest priority to 'HLC Protocol'.<br/>2. Set EVSE authentication option to 'Authentication Type'.<br/>3. Set 'EV HMI charging schedule values'.<br/>4. Set 'EVSE charge availability' values.<br/>5. Plug-in vehicle. Ensure the vehicle is plugged in before any session timeout occurs.<br/>6. Provide 'Authentication Type'.<br/>7. Observe session initialization HLC Messaging and record "ChargingProfile" within the EV message "PowerDeliveryRequest".<br/>8. Wait until the charge session terminates automatically.<br/>9. Unplug EV.</td></tr><tr><td class='label'>Pass Criteria (Check box if met)</td><td colspan='4'><table style="width:100%;border:none;"><tr style="border:none;"><td style="border:none;">• EV communicates Charge Parameters via a ChargeParameterDiscoveryRequest.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr><tr style="border:none;"><td style="border:none;">• EVSE responds with ChargeParameterDiscoveryResponse.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr><tr style="border:none;"><td style="border:none;">• The charging session starts and automatically terminates once the EV user-specified energy amount (EAmount) has been delivered to the EV.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr></table></td></tr><tr><td class='label'>Comments</td><td colspan='4'><br/><br/><br/><br/><br/></td></tr></table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+    </body></html>

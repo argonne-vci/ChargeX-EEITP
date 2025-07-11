@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            padding: 20px;
+            position: relative;
+        }
+
+        table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: auto;
+        }
+
+        td {
+            border: 1px solid #000;
+            padding: 2px 4px;
+            vertical-align: top;
+            word-wrap: break-word;
+            max-width: 200px;
+        }
+
+        td.label {
+            font-weight: bold;
+            background: #f2f2f2;
+        }
+
+        .header-img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/static/images/chargex.png" alt="ChargeX Logo" , style="float: right; width: 25%; margin: 5px;">
+    <table>
+        <br>
+        <br>
+        <tr>
+            <td class='label' style='background-color: #779394; color: white;'>Test Name</td>
+            <td class='label' colspan='4' style='background-color: #779394; color: white;'></td>
+        </tr>
+        <tr>
+            <td class='label'>Test Identifier</td>
+            <td colspan='4'></td>
+        </tr>
+        <tr>
+            <td class='label'>Test Type</td>
+            <td colspan='4'> </td>
+        </tr>
+        <tr>
+            <td class='label'>Test Category</td>
+            <td colspan='4'></td>
+        </tr>
+        <tr>
+            <td class='label'>Test Purpose</td>
+            <td colspan='4'> </td>
+        </tr>
+        <tr>
+            <td class='label'>Observed Metrics</td>
+            <td colspan='4'> </td>
+        </tr>
+        <tr>
+            <td class='label'>Intended MRECs/Errors</td>
+            <td colspan='4'> </td>
+        </tr>
+        <tr>
+            <td class='label'>Other Possible MRECs</td>
+            <td colspan='4'> </td>
+        </tr>
+        <tr>
+            <td class='label' rowspan='5'>Test Conditions</td>
+            <td class='label' colspan="1">Pre-condition #1</td>
+            <td colspan='3'> </td>
+        </tr>
+        <tr>
+            <td class='label' colspan="1">Pre-condition #2</td>
+            <td colspan='3'> </td>
+        </tr>
+        <tr>
+            <td class='label' colspan="1">Pre-condition #3</td>
+            <td colspan='3'> </td>
+        </tr>
+        <tr>
+            <td class='label' colspan="1">Pre-condition #4</td>
+            <td colspan='3'> </td>
+        </tr>
+        <tr>
+            <td class='label' colspan="1">...</td>
+            <td colspan='3'> </td>
+        </tr>
+        <tr>
+            <td class='label'>Steps</td>
+            <td colspan='4'>1. <br />2. <br />3. <br />4. <br />5. <br />6. <br />7. <br />8.<br />9.<br />... </td>
+        </tr>
+        <tr>
+            <td class='label'>Pass Criteria (Check box if met)</td>
+            <td colspan='4'>
+                <table style="width:100%;border:none;">
+                    <tr style="border:none;">
+                        <td style="border:none;">• #...EVSE:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td style="border:none;">• #2 EVSE:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td style="border:none;">• #1 EVSE:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td style="border:none;">• #...EV:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td style="border:none;">• #2 EV:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                    <tr style="border:none;">
+                        <td style="border:none;">• #1 EV:</td>
+                        <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class='label'>Comments</td>
+            <td colspan='4'><br /><br /><br /><br /><br /></td>
+        </tr>
+    </table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+</body>
+
+</html>

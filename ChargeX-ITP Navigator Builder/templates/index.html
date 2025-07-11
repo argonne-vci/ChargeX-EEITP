@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ChargeX: Interoperability Test Plan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+    #tree-container {
+      width: 30%;
+      min-width: 200px;
+      max-width: 70%;
+      border-right: 1px solid #ccc;
+      background-color: #f2f2f2; /* Entire left side grey */
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-box {
+      background-color: #2a6e96; /* Blue header */
+      color: white;
+      padding: 0.5rem;
+    }
+    .header-box h2,
+    .header-box h3 {
+      margin: 0;
+    }
+    #tree {
+      padding: 1rem;
+      flex: 1;
+    }
+    #resizer {
+      width: 5px;
+      background-color: #ccc;
+      cursor: ew-resize;
+    }
+    #content {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      background-color: #fff;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table td {
+      padding: 0.5rem;
+      vertical-align: top;
+    }
+    table td:first-child {
+      font-weight: bold;
+      width: 25%;
+    }
+
+    /* jsTree styling */
+    #tree .jstree-node {
+      color: #2a6e96; /* blue for categories and subcategories */
+    }
+    #tree .jstree-leaf > .jstree-anchor {
+      color: #000; /* white for leaf nodes */
+    }
+    #tree .jstree-closed > .jstree-anchor,
+    #tree .jstree-open > .jstree-anchor {
+      color: #2a6e96; /* ensure folders are blue */
+    }
+  </style>
+</head>
+<body>
+  <div id="tree-container">
+    <div class="header-box">
+      <h2>ChargeX: Interoperability Test Plan</h2>
+      <h3>(Select a test name to view the test details)</h3>
+    </div>
+    <div id="tree"></div>
+  </div>
+
+  <div id="resizer"></div>
+
+  <div id="content">
+    <h2>Test Details</h2>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const resizer = document.getElementById('resizer');
+      const left = document.getElementById('tree-container');
+
+      let isResizing = false;
+
+      resizer.addEventListener('mousedown', () => {
+        isResizing = true;
+        document.body.style.cursor = 'ew-resize';
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (!isResizing) return;
+        const minWidth = 200;
+        const maxWidth = window.innerWidth * 0.7;
+        let newWidth = e.clientX;
+        if (newWidth < minWidth) newWidth = minWidth;
+        if (newWidth > maxWidth) newWidth = maxWidth;
+        left.style.width = newWidth + 'px';
+      });
+
+      document.addEventListener('mouseup', () => {
+        if (isResizing) {
+          isResizing = false;
+          document.body.style.cursor = 'default';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

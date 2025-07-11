@@ -1,0 +1,955 @@
+[
+  {
+    "text": "Test Table Template",
+    "li_attr": {
+      "data-filename": "TestCase_0.html"
+    },
+    "icon": "fa fa-flag"
+  },
+  {
+    "text": "Baseline Functionality & Safety Tests",
+    "icon": "fa fa-folder",
+    "children": [
+      {
+        "text": "Authentication Types, Methods & Timeouts",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "\"FreeVend\" or \"No authorization/authentication\"",
+            "li_attr": {
+              "data-filename": "TestCase_1.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Authentication after Plug-in \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_2.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Authentication before Plug-in \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_3.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Timeout after Plug-in\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_4.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Timeout after Authentication\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_5.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Timeout after Plug-in, then Authenticate\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_6.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Timeout after Authentication, then Plug-in\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_7.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Plug & Charge (PnC) Charge Start",
+            "li_attr": {
+              "data-filename": "TestCase_8.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV preferring DIN from EVSE)\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_9.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV preferring ISO-2 from EVSE)\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_10.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV forcing ISO-2 from EVSE)\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_11.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV forcing ISO-2 from EVSE, EVSE ISO-2 not supported)",
+            "li_attr": {
+              "data-filename": "TestCase_12.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV forcing DIN from EVSE, EVSE DIN not supported)",
+            "li_attr": {
+              "data-filename": "TestCase_13.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV preferring ISO-20 from EVSE)\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_14.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV forcing ISO-20 from EVSE)\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_15.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "HLC Priority Selection (EV forcing ISO-20 from EVSE, EVSE ISO-20 not supported)",
+            "li_attr": {
+              "data-filename": "TestCase_16.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Idle Error Faults (EVSE Only)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Emulating a cut cable",
+            "li_attr": {
+              "data-filename": "TestCase_17.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a lost Pilot signal",
+            "li_attr": {
+              "data-filename": "TestCase_18.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a loss of internet",
+            "li_attr": {
+              "data-filename": "TestCase_19.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a broken latch",
+            "li_attr": {
+              "data-filename": "TestCase_20.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a complete loss of EVSE power",
+            "li_attr": {
+              "data-filename": "TestCase_21.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Session Initialization (SI) Tests [from  Authentication to Power transfer]",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Manual stop methods during SI [Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_22.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Manual stop during Session Initialization (SI) States \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_23.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with different EV modes \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_24.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with partially inserted connector (latch spring engaged)",
+            "li_attr": {
+              "data-filename": "TestCase_25.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with failure to lock",
+            "li_attr": {
+              "data-filename": "TestCase_26.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with disconnected DC+ or DC- cable",
+            "li_attr": {
+              "data-filename": "TestCase_27.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Press Latch during Session Initialization (SI)",
+            "li_attr": {
+              "data-filename": "TestCase_28.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Sudden plug disconnection and re-connection during Session Initialization (SI)",
+            "li_attr": {
+              "data-filename": "TestCase_29.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Power Transfer (PT) Tests",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "DRIVE mode during power transfer",
+            "li_attr": {
+              "data-filename": "TestCase_30.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "DRIVE mode before unplug",
+            "li_attr": {
+              "data-filename": "TestCase_31.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "EV in motion during charge session",
+            "li_attr": {
+              "data-filename": "TestCase_32.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Automatic Stop Charge during PT \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_33.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Manual Stop Charge during PT \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_34.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with different Temperature soaked EV & EVSE \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_35.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with different EV State of Charge \n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_36.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge under nominal EV conditions to naturally achieve full power",
+            "li_attr": {
+              "data-filename": "TestCase_37.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge under nominal EV conditions to naturally achieve full power with all EV auxiliaries ON.",
+            "li_attr": {
+              "data-filename": "TestCase_38.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "EV remains plugged-in into the EVSE even after the actual charge transfer ends.",
+            "li_attr": {
+              "data-filename": "TestCase_39.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Manually request high current to determine maximum allowed from EV",
+            "li_attr": {
+              "data-filename": "TestCase_40.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Manually request low current to determine minimum allowed from EV",
+            "li_attr": {
+              "data-filename": "TestCase_41.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Manually request negative current to determine if allowed from EV",
+            "li_attr": {
+              "data-filename": "TestCase_42.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating Loss of Internet during PT",
+            "li_attr": {
+              "data-filename": "TestCase_43.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a lost Pilot signal during PT",
+            "li_attr": {
+              "data-filename": "TestCase_44.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a complete loss of EVSE power during PT",
+            "li_attr": {
+              "data-filename": "TestCase_45.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a CableOverTemp during PT",
+            "li_attr": {
+              "data-filename": "TestCase_46.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating a ConnectorOverTemp during PT",
+            "li_attr": {
+              "data-filename": "TestCase_47.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emulating an EVSE Contactor fault during PT",
+            "li_attr": {
+              "data-filename": "TestCase_48.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Advanced Charging Tests",
+    "icon": "fa fa-folder",
+    "children": [
+      {
+        "text": "Simultaneous Single Dispenser Charging (Multiple EVs required)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Start charge while other port is charging another EV ",
+            "li_attr": {
+              "data-filename": "TestCase_49.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge on both ports with two EVs at the same time using different authentication methods.\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_50.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge while other port is charging another EV with different battery voltage topologies. ",
+            "li_attr": {
+              "data-filename": "TestCase_51.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Start charge with both ports requesting nameplate rated Max available power per port",
+            "li_attr": {
+              "data-filename": "TestCase_52.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Seamless Retry ",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Successful seamless retry  using EIM due to injecting pre-HLC faults.\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_53.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Successful seamless retry  using EIM due to injecting V2G Comms / HLC Errors\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_54.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Successful seamless retry  using EIM due to injecting an error during handshake\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_55.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Successful seamless retry using EIM due to injecting an error during miscellaneous timeouts\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_56.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Unsuccessful seamless retry due to retry attempts duration exceeding the specified TT_SR_session timer duration\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_57.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Unattempted seamless retry using EIM due to injecting a proximity pilot related fault",
+            "li_attr": {
+              "data-filename": "TestCase_58.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Unattempted seamless retry using EIM due to injecting protective earth related faults\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_59.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Unattempted seamless retry using EIM due to injecting control pilot related faults\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_60.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Successful seamless retry using EIM due to injecting control pilot related faults\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_61.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Unattempted seamless retry using EIM due to injecting electrical safety related faults and errors\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_62.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Pause and Resume",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "\"Emulated\" Pause&Resume by manually curtailing EVSE current to 0A during PT",
+            "li_attr": {
+              "data-filename": "TestCase_63.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "EV commanded pause via SessionStopReq \"Pause\" during PT, then end of session",
+            "li_attr": {
+              "data-filename": "TestCase_64.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "EV commanded pause via SessionStopReq \"Pause\" during PT then command SessionSetupReq to resume using same  SessionID\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_65.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Pause: EV commanded pause via SessionStopReq \"Pause\" during PT then manually command SessionSetupReq to resume using new SessionID [Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_66.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Pilot Wake",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Pilot Wake & Resume: Wake after a demand response (DR) event\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_67.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Pilot Wake & Resume: Wake after a power outage event\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_68.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Pilot Wake & Resume: Wake after a failure event\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_69.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "OCPP Smart Charge Profile (SCP) ",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Scheduled  5-minute, 1kW power curtailment event before plug-in, start charge 2 min prior to curtailment event.",
+            "li_attr": {
+              "data-filename": "TestCase_70.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Scheduled  5-minute, 1kW power curtailment event before plug-in, start charge during curtailment event.",
+            "li_attr": {
+              "data-filename": "TestCase_71.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Scheduled  5-minute, 1kW power curtailment event before plug-in, cancel curtailment event during curtailment period.",
+            "li_attr": {
+              "data-filename": "TestCase_72.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Scheduled  5-minute, 0kW power curtailment event before plug-in, start charge 2-min prior to curtailment event.",
+            "li_attr": {
+              "data-filename": "TestCase_73.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Schedule (x3) 2-minute 1kW curtailment events before plug-in (1 min apart each), start charge 2-min prior to first curtailment event.",
+            "li_attr": {
+              "data-filename": "TestCase_74.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Schedule (x2) 2-minute power curtailment events before plug-in during the same time at different power levels, start charge 2 min prior to curtailment events.",
+            "li_attr": {
+              "data-filename": "TestCase_75.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Emergency  5-minute, 1kW power curtailment event during power transfer",
+            "li_attr": {
+              "data-filename": "TestCase_76.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Charge Discovery Protocol (CDP)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Short DepartureTime duration input from EV user for CDP",
+            "li_attr": {
+              "data-filename": "TestCase_77.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Small EAmount value input from EV user for CDP",
+            "li_attr": {
+              "data-filename": "TestCase_78.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Infinite DepartureTime duration input from EV user for CDP",
+            "li_attr": {
+              "data-filename": "TestCase_79.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Infinite EAmount value input from EV user for CDP",
+            "li_attr": {
+              "data-filename": "TestCase_80.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Smart Charge Scheduling (SCS)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with non-zero power values",
+            "li_attr": {
+              "data-filename": "TestCase_81.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling with an intermediate pause (zero-power) (pause and resume)",
+            "li_attr": {
+              "data-filename": "TestCase_82.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling with a  zero power step at the beginning",
+            "li_attr": {
+              "data-filename": "TestCase_83.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with non-zero relative start time",
+            "li_attr": {
+              "data-filename": "TestCase_84.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling with multiple consecutive relative zero start times with different power levels",
+            "li_attr": {
+              "data-filename": "TestCase_85.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with multiple non-consecutive relative zero start times with different power levels",
+            "li_attr": {
+              "data-filename": "TestCase_86.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with multiple consecutive relative non-zero start times",
+            "li_attr": {
+              "data-filename": "TestCase_87.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with multiple non-consecutive relative non-zero start times",
+            "li_attr": {
+              "data-filename": "TestCase_88.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Smart charge scheduling not sufficient to charge the EV",
+            "li_attr": {
+              "data-filename": "TestCase_89.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Smart charge scheduling x OCCP Curtailment\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_90.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Scheduled Bi-directional Power Transfer (SBPT)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Multi-Step Smart Charge Scheduling  with bi-directional power transfer\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_91.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Dynamic Bi-directional Power Transfer (DBPT)",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "V2G Dynamic BPT using ISO 15118-20, Command -5Amps",
+            "li_attr": {
+              "data-filename": "TestCase_92.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "V2G Dynamic BPT using ISO 15118-20, Power request from -20kW to 20kW every 5 seconds.",
+            "li_attr": {
+              "data-filename": "TestCase_93.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "V2G Dynamic BPT using ISO 15118-20; Request max rated negative power.",
+            "li_attr": {
+              "data-filename": "TestCase_94.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Adapter Tests ",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "Adapter plug-in to connector first",
+            "li_attr": {
+              "data-filename": "TestCase_116.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Adapter plug-in to vehicle first",
+            "li_attr": {
+              "data-filename": "TestCase_117.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "PnC with adapter",
+            "li_attr": {
+              "data-filename": "TestCase_118.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Single PKI Tests",
+    "icon": "fa fa-folder",
+    "children": [
+      {
+        "text": "Basic Certificate Validity Tests",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "PnC with all valid certificates",
+            "li_attr": {
+              "data-filename": "TestCase_95.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Invalid \"EV provisioning certificate\"\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_96.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Invalid \"Contract Certificate\"\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_97.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Invalid \"SECC Leaf Certificate\"\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_98.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Invalid ProvServe Certificate/ Signature.\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_99.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid Certificate Concatenation testing.",
+            "li_attr": {
+              "data-filename": "TestCase_100.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Revocation: EVSE & Contract Certs  [NREL Test Cases]",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "CRL to verify PKI certificates and check revocation\n[NREL 1.1.1] ",
+            "li_attr": {
+              "data-filename": "TestCase_101.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "OCSP to verify PKI certificate validity and revocation status\n[NREL 1.1.2]",
+            "li_attr": {
+              "data-filename": "TestCase_102.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Revoked \"EV Contract Certificate\"\n[Multiple enumerations]\n[NREL 1.1.3]",
+            "li_attr": {
+              "data-filename": "TestCase_103.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid \"EV Contract Certificate\"  and check for valid EMAID\n[NREL 1.1.4]",
+            "li_attr": {
+              "data-filename": "TestCase_104.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid \"EV Contract Certificate\" but Invalid CRL Signature (OCSP disabled)\n[NREL 1.1.5]",
+            "li_attr": {
+              "data-filename": "TestCase_105.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Invalid \"SECC Leaf Certificate\",  stapled OCSP shows revoked certificate\n[NREL 1.1.6]",
+            "li_attr": {
+              "data-filename": "TestCase_106.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid \"SECC Leaf Certificate\",  stapled OCSP shows not revoked\n[NREL 1.1.7]",
+            "li_attr": {
+              "data-filename": "TestCase_107.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid \"SECC Leaf Certificate\", stapled OCSP has invalid root signature\n[NREL 1.1.8]",
+            "li_attr": {
+              "data-filename": "TestCase_108.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid PKI Certificates, No CRL or OCSP availability to validate certificates\n[Multiple enumerations]",
+            "li_attr": {
+              "data-filename": "TestCase_109.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      },
+      {
+        "text": "Revocation: Sub-CA2 Certs  [NREL Test Cases]",
+        "icon": "fa fa-folder",
+        "children": [
+          {
+            "text": "\nValid PKI certificates, updated/valid CRL, CRL shows revoked CSO SubCA2 certificate\n[NREL 1.2.1]",
+            "li_attr": {
+              "data-filename": "TestCase_110.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid PKI certificates, updated/valid CRL, CRL shows revoked EV   SubCA2 Certificate\n[NREL 1.2.2]",
+            "li_attr": {
+              "data-filename": "TestCase_111.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid PKI certificates, expired CRL/OCSP cache outside 4 weeks for SubCA Certificates\n[Multiple enumerations]\n[NREL 1.2.3]",
+            "li_attr": {
+              "data-filename": "TestCase_112.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Valid PKI certificates, CRL/OCSP cache not updated for 1 week for SubCA Certificates\n[Multiple enumerations]\n[NREL 1.2.4]",
+            "li_attr": {
+              "data-filename": "TestCase_113.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "EVSE sends OCSP stapled response to EV, but the CSO SubCA2 Certificate has been revoked.\n[NREL 1.2.5]",
+            "li_attr": {
+              "data-filename": "TestCase_114.html"
+            },
+            "icon": "fa fa-flag"
+          },
+          {
+            "text": "Both EV SubCA2 and CSO SubCA2 Certificates are revoked\n[Multiple enumerations]\n[NREL 1.2.6]",
+            "li_attr": {
+              "data-filename": "TestCase_115.html"
+            },
+            "icon": "fa fa-flag"
+          }
+        ]
+      }
+    ]
+  }
+]

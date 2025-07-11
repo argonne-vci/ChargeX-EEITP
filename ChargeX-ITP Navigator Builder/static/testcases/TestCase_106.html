@@ -1,0 +1,32 @@
+<html><head><style>
+        body { font-family: Arial; font-size: 16px; padding: 20px; position: relative; }
+        table { border: 1px solid #000; border-collapse: collapse; width: 100%; table-layout: auto;}
+        td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; word-wrap: break-word; max-width: 200px;}
+        td.label { font-weight: bold; background: #f2f2f2; }
+        .header-img { position: absolute; top: 20px; right: 20px; }
+        .footer { margin-top: 20px; font-size: 14px; }
+        </style></head><body>
+        <img src="/static/images/chargex.png" alt="ChargeX Logo", 
+        style="float: right; width: 25%; margin: 5px;">
+        <table>
+        <br>
+        <br>
+        <tr><td class='label' style='background-color: #779394; color: white;'>Test Name</td><td class='label' colspan='4' style='background-color: #779394; color: white;'>Invalid "SECC Leaf Certificate",  stapled OCSP shows revoked certificate
+[NREL 1.1.6]</td></tr><tr><td class='label'>Test Identifier</td><td colspan='4'>ITP-03-15-006</td></tr><tr><td class='label'>Test Type</td><td colspan='4'>Revocation: EVSE & Contract Certs  [NREL Test Cases]</td></tr><tr><td class='label'>Test Category</td><td colspan='4'>Single PKI Tests</td></tr><tr><td class='label'>Test Purpose</td><td colspan='4'>To ensure the EV can retrieve the status of a specific EVSE certificate using OCSP and determine whether to initiate the charging session based on the certificate/ certificate chain status.</td></tr><tr><td class='label'>Observed Metrics</td><td colspan='4'>Session Initialization, Messages,
+EV UI response,
+EVSE UI response,
+HLC Message Sequence</td></tr><tr><td class='label'>Intended MRECs/Errors</td><td colspan='4'>--</td></tr><tr><td class='label'>Other Possible MRECs</td><td colspan='4'>InvalidToken,
+InvalidPayment</td></tr><tr><td class='label' rowspan='6'>Test Conditions</td><td class='label'>Authentication Type/s</td><td colspan='3'>PnC</td></tr><tr><td class='label'>HLC Protocol/s</td><td colspan='3'>ISO 15118-2, ISO 15118-20</td></tr><tr><td class='label'>Involved System/s</td><td colspan='3'>EV, EVSE, PKI Provider</td></tr><tr><td class='label' rowspan='3'>Certificate/s (PKI)</td><td class='label'>Valid Certificate/s</td><td colspan='2'>V2G Root CA Cert,  EV Provisioning Cert, Contract Cert, (Optionally: EV SubCA1 Cert, EV SubCA2 Cert, CSO SubCA1 Cert, CSO SubCA2 Cert, ProvServ Cert)</td></tr><tr><td class='label'>Invalid Certificate/s</td><td colspan='2'>SECC Leaf Certificate</td></tr><tr><td class='label'>Reason/s for Certificate/s Invalidity</td><td colspan='2'>Revoked certificate (OCSP Response)</td></tr><tr><td class='label'>Steps</td><td colspan='4'>1. Ensure  'Valid Certificate/s" are installed on the appropriate entity within the charging environment.<br/>2. Ensure all certificates form a valid chain to a common trust anchor.<br/>3. Clear cached CRLs to force EVSE to use OCSP for certificate validation.<br/>4. Ensure the SECC Leaf Certificate is invalid due to the "Reason/s for Certificate/s Invalidity".<br/>4. Ensure the OCSP response for the SECC Leaf Certificate is stapled to TLS.<br/>6. Set EVSE HLC highest priority to 'HLC Protocol'.<br/>7. Set EVSE authentication option to 'Authentication Type'.<br/>8. Plug-in vehicle.<br/>9. If power transfer begins, terminate the charge session 30-60s into power transfer.<br/>10. Unplug EV.</td></tr><tr><td class='label'>Pass Criteria (Check box if met)</td><td colspan='4'><table style="width:100%;border:none;"><tr style="border:none;"><td style="border:none;">• EV checks the stapled response for SECC Leaf Certificate status via OCSP and does not proceed with the charge session.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr><tr style="border:none;"><td style="border:none;">• EVSE prompts the user to use EIM without unplugging the EV.</td>
+                            <td style="border:none;width:10%;text-align:right;">
+                            <input type="checkbox" /></td></tr></table></td></tr><tr><td class='label'>Comments</td><td colspan='4'><br/><br/><br/><br/><br/></td></tr></table>
+    <div class="footer">
+        <br>
+        <br>
+        Interoperability Test Plan: An initiative by
+        <a href="https://inl.gov/chargex/" target="_blank">ChargeX</a> consortium,
+        Contact Person: Sam Thruston, Argonne National Laboratory (ANL),
+        <a href="mailto:sthurston@anl.gov">sthurston@anl.gov</a>
+    </div>
+    </body></html>
