@@ -4,7 +4,7 @@
 </p>
 <div style="clear: both;"></div>
 
-# ChargeX – EV-EVSE Interoperability Test Plan
+# ChargeX's – EV-EVSE Interoperability Test Plan
 
 ## 🧭 Overview
 
